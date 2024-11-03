@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 2em;
+  border-radius: 0px;
+  /* width: 100%; */
+  overflow: hidden;
+  background-color: #E5E7EB;
+}
+main {
+  /* margin: 2rem; */
+  display: flex;
+  width: 100%;
+  height: 90dvh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-block: 1em 3.8em;
+  align-items: center;
+  box-sizing: border-box;
+  /* justify-content: center; */
+  background-color: #A7A8CD;
+}
+.content {
+  display: flex;
+  /* min-height: 100%; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightcoral; */
+  /* padding: 1rem; */
+  width: 40%;
+  position: relative;
+  margin: 0 auto;
+  margin-block-start: 2em;
+}
+.tag{
+  margin: 0;
+  font-weight: 700;
+  top: 0.5em;
+  left: -0.7em;
+  border-radius: 0 20px 20px 0;
+  background-color: #FDF1B5;
+  padding: 0.3em 0.5em;
+  position: absolute;
+}
+.content_grid {
+  color: black;
+  display: grid;
+  /* position: relative; */
+  /* grid-template-columns: 1fr 0.6fr; */
+  /* margin-block: 1em; */
+  /* gap: 20px; */
+  min-height: 100%;
+  /* background-color: lightcyan; */
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  grid-template-rows: 17em;
+  align-items: stretch;
+}
+
+.top_image {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the image */
+  padding: 0;
+  /* background-color: lightblue; */
+  /* min-height: 90%; */
+  margin: 0;
+  /* border-radius: 5px; */
+  max-width: 100%;
+  /* margin-inline: 2em; */
+}
+
+.content_grid img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: auto;
+  object-fit: cover;
+}
+.head {
+  /* background-color: lightgray; */
+  display: flex;
+  /* justify-content: center; */
+align-items: baseline;
+  flex-direction: row;
+  gap: 1em;
+}
+.head h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  /* color: darkblue; */
+}
+.head p {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: rgb(77, 76, 76);
+}
+.bottom{
+background-color: white;
+ padding: 1em 1em;
+ border-radius: 0 0 10px 10px;
+}

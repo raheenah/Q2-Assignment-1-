@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Brown";
+  src: url("/FontleroyBrown/FontleroyBrown.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("/sofia-pro-cufonfonts-webfont/Sofia\ Pro\ Regular\ Az.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Brown", sans-serif;
+  background-color: #f7fdfc;
+}
+.form_item input:focus,
+.form_item select:focus {
+  border-color: #2ec4b6;
+  box-shadow: #2ec4b6 0px 0px 5px;
+  outline: none;
+}
+.form_item input:hover,
+.form_item select:hover {
+  border-color: #2ec4b6;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-inline: 24px;
+    /* background-color: aqua; */
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 30px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+  }
+  .intro img {
+    margin: 0;
+    padding: 0;
+    max-width: 38.67px;
+    min-height: 40px;
+  }
+  .intro-text {
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .intro-text h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 29.4px;
+    font-weight: 700;
+  }
+  .mobile-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #737373;
+  }
+  .desktop-text {
+    display: none;
+  }
+  .form-section {
+    margin: 0;
+    margin-block-start: 42px;
+
+    border-radius: 6px;
+    /* background-color: #fff; */
+  }
+  form {
+    background-color: #fff;
+
+    max-height: 860px;
+    padding-block: 24px;
+    padding-inline: 16px;
+  }
+  .form_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 27px;
+    font-family: "Sofia Pro", sans-serif;
+  }
+  .form_item label {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #011c34;
+  }
+  .input-field,
+  input {
+    height: 48px;
+    color: #ccc; /* Adjust color to match other inputs */
+
+    border: 1px solid #ccc;
+    border-radius: 6px; /* color: #3f2e2e; */
+    /* padding-block: 14px; */
+    padding-inline: 16px;
+  }
+
+  select.input-field,
+  input[type="date"].input-field {
+    /* -webkit-appearance: none; Remove default styling */
+    /* -moz-appearance: none; */
+    /* appearance: none; */
+    background-color: transparent; /* Ensure same background color */
+    font-size: 14px;
+
+    border-radius: 6px; /* color: #3f2e2e; */
+
+    color: #ccc; /* Adjust color to match other inputs */
+    height: 48px; /* Ensure consistent height */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* padding-block: 14px; */
+    padding-inline: 16px;
+  }
+   input[type="date"].input-field {
+    background-image: url("image\ copy.png");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; /* Hides the icon in WebKit browsers (Chrome, Safari) */
+}
+ #password{
+    background-image: url('image.png'); /* Path to your eye icon */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: right 10px center; /* Position the icon */
+    background-size: 20px;
+  }
+  button {
+    margin-top: 6px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Sofia Pro", sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    margin-bottom: 30px;
+    /* border-radius: 6px; */
+    background-color: #2ec4b6;
+  }
+  .terms {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .terms a {
+    color: #2ec4b6;
+  }
+}
+@media (min-width: 901px) {
+  body {
+    padding-inline: 24px;
+    /* background-color: aqua; */
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row; */
+    margin-block-start: 30px;
+    gap: 140px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+    max-width: 460px;
+    margin-top: 175px;
+    margin-left: 140px;
+  }
+  .intro img {
+    margin: 0;
+    padding: 0;
+    max-width: 77.33px;
+    min-height: 80px;
+  }
+  .intro-text {
+    font-family: "Brown", sans-serif;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .intro-text h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  .mobile-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #737373;
+    display: none;
+  }
+  .desktop-text {
+    margin: 0;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #737373;
+    /* display: none; */
+  }
+  .form-section {
+    margin: 0;
+    margin-block-start: 81px;
+    max-width: 580px;
+    background-color: white;
+    border-radius: 6px;
+    height: 570px;
+    padding-block: 40px;
+    padding-inline: 40px;
+    /* background-color: #737373; */
+    /* background-color: #fff; */
+  }
+  form {
+    /* background-color: #fff; */
+    /* min-height: 860px; */
+    /* min-height: 678px; */
+
+    /* max-height: 860px;
+padding-block: 40px;
+    padding-inline: 40px; */
+    display: grid;
+    column-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    /* max-width: 580px;
+    background-color: white; */
+  }
+  .form_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 27px;
+    font-family: "Sofia Pro", sans-serif;
+  }
+  .form_item label {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #011c34;
+  }
+  .input-field,
+  input {
+    height: 48px;
+    color: #ccc; /* Adjust color to match other inputs */
+
+    border: 1px solid #ccc;
+    border-radius: 6px; /* color: #3f2e2e; */
+    /* padding-block: 14px; */
+    padding-inline: 16px;
+  }
+
+  select.input-field,
+  input[type="date"].input-field {
+    /* -webkit-appearance: none; Remove default styling */
+    /* -moz-appearance: none; */
+    /* appearance: none; */
+    background-color: transparent; /* Ensure same background color */
+    font-size: 14px;
+
+    border-radius: 6px; /* color: #3f2e2e; */
+
+    color: #ccc; /* Adjust color to match other inputs */
+    height: 48px; /* Ensure consistent height */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* padding-block: 14px; */
+    padding-inline: 16px;
+  }
+  input[type="date"].input-field {
+    background-image: url("image\ copy.png");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; /* Hides the icon in WebKit browsers (Chrome, Safari) */
+}
+  button {
+    margin-top: 6px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Sofia Pro", sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    grid-column: span 2;
+    /* margin-bottom: 30px; */
+    /* border-radius: 6px; */
+    background-color: #2ec4b6;
+  }
+  #alevel, #password {
+    grid-column: span 2;
+  }
+  #password{
+    background-image: url('image.png'); /* Path to your eye icon */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: right 10px center; /* Position the icon */
+    background-size: 20px;
+  }
+  .terms {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12.5px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .terms a {
+    color: #2ec4b6;
+    font-weight: 500;
+  }
+}
