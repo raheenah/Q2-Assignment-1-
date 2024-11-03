@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 2em;
+  display: flex;
   border-radius: 0px;
   /* width: 100%; */
   overflow: hidden;
@@ -9,6 +10,7 @@ body {
 main {
   /* margin: 2rem; */
   display: flex;
+  position: relative;
   width: 100%;
   height: 90dvh;
   box-sizing: border-box;
@@ -18,6 +20,32 @@ main {
   box-sizing: border-box;
   /* justify-content: center; */
   background-color: #A7A8CD;
+}
+nav{
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style:none;
+  margin: 0;
+  padding: 0;
+
+  /* background-color: red; */
+}
+nav ul li a{
+  display: block;
+
+  padding: 1em 1em;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 .content {
   display: flex;
