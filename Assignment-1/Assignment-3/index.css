@@ -89,7 +89,7 @@ nav ul li a{
 .top_image {
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertically center the image */
+  align-items: center; 
   padding: 0;
   /* background-color: lightblue; */
   /* min-height: 90%; */

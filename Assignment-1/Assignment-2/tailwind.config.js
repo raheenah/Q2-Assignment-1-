@@ -9,6 +9,9 @@ module.exports = {
         "24px": "24px",
         // Custom size
       },
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
       minWidth: {
         "374px": "374px",
         "401px": "40px",

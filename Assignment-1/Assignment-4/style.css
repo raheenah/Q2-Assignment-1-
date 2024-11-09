@@ -18,10 +18,10 @@ body {
   background-color: #f7fdfc;
   display: flex;
 }
-main{
+main {
   position: relative;
 }
-nav{
+nav {
   position: absolute;
   color: black;
   top: 0;
@@ -30,16 +30,16 @@ nav{
   padding: 0;
   text-decoration: none;
 }
-nav ul{
+nav ul {
   flex-wrap: wrap;
   display: flex;
-  list-style:none;
+  list-style: none;
   margin: 0;
   padding: 0;
 
   /* background-color: red; */
 }
-nav ul li a{
+nav ul li a {
   display: block;
 
   padding: 1em 1em;
@@ -134,32 +134,39 @@ nav ul li a{
   .input-field,
   input {
     height: 48px;
-    color: #ccc; /* Adjust color to match other inputs */
+    color: #ccc; 
+    font-size: medium;
 
     border: 1px solid #ccc;
-    border-radius: 6px; /* color: #3f2e2e; */
+    border-radius: 6px;
     /* padding-block: 14px; */
     padding-inline: 16px;
+    font-size: medium;
+    font-family: "Brown", sans-serif;
   }
-
+  input::placeholder {
+    color: #ccc;
+  }
   select.input-field,
   input[type="date"].input-field {
-    /* -webkit-appearance: none; Remove default styling */
+    /* -webkit-appearance: none; */
     /* -moz-appearance: none; */
     /* appearance: none; */
-    background-color: transparent; /* Ensure same background color */
+    background-color: transparent;
     font-size: 14px;
+    font-size: medium;
+    font-size: medium;
+    font-family: "Brown", sans-serif;
+    border-radius: 6px; 
 
-    border-radius: 6px; /* color: #3f2e2e; */
-
-    color: #ccc; /* Adjust color to match other inputs */
-    height: 48px; /* Ensure consistent height */
+    color: #ccc; 
+    height: 48px;
     border: 1px solid #ccc;
     border-radius: 4px;
     /* padding-block: 14px; */
     padding-inline: 16px;
   }
-   input[type="date"].input-field {
+  input[type="date"].input-field {
     background-image: url("image\ copy.png");
     background-repeat: no-repeat;
     background-position: right 16px center;
@@ -169,12 +176,12 @@ nav ul li a{
     appearance: none;
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none; /* Hides the icon in WebKit browsers (Chrome, Safari) */
-}
- #password{
-    background-image: url('image.png'); /* Path to your eye icon */
-    background-repeat: no-repeat; /* Prevent repeating */
-    background-position: right 10px center; /* Position the icon */
+    display: none; 
+  }
+  #password {
+    background-image: url("image.png"); 
+    background-repeat: no-repeat; 
+    background-position: right 10px center; 
     background-size: 20px;
   }
   button {
@@ -204,13 +211,15 @@ nav ul li a{
 }
 @media (min-width: 901px) {
   body {
-    padding-inline: 24px;
+    /* padding-inline: 24px; */
+    /* margin: auto 0; */
     /* background-color: aqua; */
   }
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* flex-direction: row; */
+    margin: auto;
     margin-block-start: 30px;
     gap: 140px;
   }
@@ -301,26 +310,30 @@ padding-block: 40px;
   .input-field,
   input {
     height: 48px;
-    color: #ccc; /* Adjust color to match other inputs */
 
     border: 1px solid #ccc;
-    border-radius: 6px; /* color: #3f2e2e; */
+    border-radius: 6px; 
     /* padding-block: 14px; */
     padding-inline: 16px;
+    font-size: medium;
+    font-family: "Brown", sans-serif;
   }
-
+ input::placeholder {
+    color: #ccc;
+  }
   select.input-field,
   input[type="date"].input-field {
-    /* -webkit-appearance: none; Remove default styling */
+    /* -webkit-appearance: none; */
     /* -moz-appearance: none; */
     /* appearance: none; */
-    background-color: transparent; /* Ensure same background color */
+    background-color: transparent;
     font-size: 14px;
+    font-size: medium;
+    font-family: "Brown", sans-serif;
+    border-radius: 6px; 
 
-    border-radius: 6px; /* color: #3f2e2e; */
-
-    color: #ccc; /* Adjust color to match other inputs */
-    height: 48px; /* Ensure consistent height */
+    color: #ccc; 
+    height: 48px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     /* padding-block: 14px; */
@@ -336,8 +349,8 @@ padding-block: 40px;
     appearance: none;
   }
   input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none; /* Hides the icon in WebKit browsers (Chrome, Safari) */
-}
+    display: none;
+  }
   button {
     margin-top: 6px;
     height: 48px;
@@ -353,13 +366,14 @@ padding-block: 40px;
     /* border-radius: 6px; */
     background-color: #2ec4b6;
   }
-  #alevel, #password {
+  #alevel,
+  #password {
     grid-column: span 2;
   }
-  #password{
-    background-image: url('image.png'); /* Path to your eye icon */
-    background-repeat: no-repeat; /* Prevent repeating */
-    background-position: right 10px center; /* Position the icon */
+  #password {
+    background-image: url("image.png"); 
+    background-repeat: no-repeat; 
+    background-position: right 10px center; 
     background-size: 20px;
   }
   .terms {
