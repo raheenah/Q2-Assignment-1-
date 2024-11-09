@@ -109,6 +109,7 @@ main {
   /* position: relative; */
 }
 
+
   .content {
   display: flex;
   flex-direction: column;
@@ -120,20 +121,23 @@ main {
 margin: 150px 0 ;
   position: relative;
 }
-
-
-
-}
-@media (max-width: 386px) {
- p {
+p {
   font-size: 1.15rem;
   position: absolute;
   /* width: 90%; */
   background-color: white;
   border-radius: 5px;
-  top: 5rem;
+  top: 3em;
   z-index: 1;
-  padding-inline: 7.5%;
+  padding-inline: 9.6%;
+  padding-block: 6rem 3rem;
+}
+
+
+}
+@media (max-width: 237px) {
+ p {
+ 
   padding-block: 6rem 3rem;
 }
 }
