@@ -21,7 +21,7 @@ body {
 main {
   position: relative;
 }
-nav {
+/* nav {
   position: absolute;
   color: black;
   top: 0;
@@ -29,7 +29,7 @@ nav {
   margin: 0;
   padding: 0;
   text-decoration: none;
-}
+} */
 nav ul {
   flex-wrap: wrap;
   display: flex;
@@ -60,6 +60,28 @@ nav ul li a {
 }
 
 @media (max-width: 900px) {
+  /* nav {
+  /* position: absolute; */
+  /* color: black;
+  bottom: 0;
+  right: 0;
+  /* margin:0  ; 
+  padding: 0; 
+  text-decoration: none;
+  max-width: 30%;
+} */
+nav ul {
+  /* flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  list-style: none;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+
+  /* background-color: red; */
+}
   body {
     padding-inline: 24px;
     /* background-color: aqua; */
