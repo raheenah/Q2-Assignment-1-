@@ -655,6 +655,11 @@ video {
   padding-bottom: 12px;
 }
 
+.py-\[72px\] {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
 .pb-\[16px\] {
   padding-bottom: 16px;
 }
@@ -669,6 +674,10 @@ video {
 
 .pt-\[8px\] {
   padding-top: 8px;
+}
+
+.pb-\[72px\] {
+  padding-bottom: 72px;
 }
 
 .font-lato {
@@ -752,6 +761,10 @@ nav ul li a{
   .md\:pr-\[32px\] {
     padding-right: 32px;
   }
+
+  .md\:pb-\[4px\] {
+    padding-bottom: 4px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -766,5 +779,9 @@ nav ul li a{
   .xl\:px-\[240px\] {
     padding-left: 240px;
     padding-right: 240px;
+  }
+
+  .xl\:pb-\[66px\] {
+    padding-bottom: 66px;
   }
 }
