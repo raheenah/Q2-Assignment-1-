@@ -64,7 +64,7 @@ margin: 120px auto ;
   position: relative;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1em 1em;
   border-radius: 5px;
   width: 100%;
@@ -91,7 +91,7 @@ p {
 }
 @media (min-width: 238px) {
  h1{
-   top: -2em;
+   font-size: 1.33em;
  }
  .content {
 
@@ -100,7 +100,7 @@ margin: 200px auto ;
 }
 @media (max-width: 238px) {
  h1{
-   top: -3em;
+   /* top: -3em; */
  }
  .content {
 

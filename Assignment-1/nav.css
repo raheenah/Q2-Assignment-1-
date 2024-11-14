@@ -1,0 +1,37 @@
+body {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+nav {
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5px 3px;
+  background-color: pink;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* background-color: red; */
+}
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #ff0095;
+  font-weight: 700;
+}
