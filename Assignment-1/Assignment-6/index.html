@@ -202,10 +202,10 @@
       </div>
 
       <div class="flex max-w-[80%] mx-auto mt-[128px]">
-        <div class="flex flex-row mr-[120px] gap-[96px]">
-          <div class="flex flex-col gap-[16px] w-[60.5%]">
+        <div class="flex flex-col items-center lg:flex-row gap-[96px]">
+          <div class="flex flex-col gap-[16px] items-center lg:w-[60.5%]">
             <h2
-              class="font-bold text-[34px] pl-[16px] border-l-8"
+              class="font-bold text-[20px] md:text-[34px] pl-[16px] border-l-8"
               style="
                 border-image: linear-gradient(
                     to bottom,
@@ -218,7 +218,9 @@
               Why choose <span class="text-blue">Scissors</span>
             </h2>
 
-            <p class="font-medium text-[15.6px] ml-[28.1px]">
+            <p
+              class="font-medium text-[18px] text-center lg:text-left md:text-[15.6px] ml-[28.1px]"
+            >
               Scissors is the hub of everything that has to do with your link
               management. We shorten your URLs, allow you creating custom ones
               for your personal, business, event usage. Our swift QR code
@@ -227,11 +229,17 @@
             </p>
           </div>
 
-          <div class="grid grid-row-2">
-            <div class="grid grid-cols-2 gap-[28px]">
-              <div class="flex flex-col gap-[40px]">
+          <div
+            class="flex flex-col md:grid md:grid-row-2 gap-[28px] lg:gap-y-[73px]"
+          >
+            <div
+              class="flex flex-col md:grid md:grid-cols-2 gap-[28px] items-center md:items-start text-center md:text-left"
+            >
+              <div
+                class="flex flex-col gap-[40px] items-center lg:items-start text-center lg:text-start"
+              >
                 <span
-                  class="self-start material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   link
                 </span>
@@ -244,11 +252,15 @@
                 </div>
               </div>
 
-              <div>
-                <span class="material-symbols-outlined"> edit </span>
-                <div>
-                  <h3>Custom URLs</h3>
-                  <p>
+              <div class="flex flex-col gap-[40px] items-center lg:items-start">
+                <span
+                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                >
+                  edit
+                </span>
+                <div class="flex flex-col gap-[16px] text-center lg:text-start">
+                  <h3 class="font-semibold text-[32px]">Custom URLs</h3>
+                  <p class="font-medium text-[16px]">
                     With Scissor, you can create custom URLs, with the length
                     you want! A solution for socials and businesses.
                   </p>
@@ -256,27 +268,35 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-2">
-              <div>
-                <span class="material-symbols-outlined"> widgets </span>
-                <div>
-                  <h3>QR Codes</h3>
-                  <p>
-                    Generate QR codes to your business, events. Bring your
-                    audience and customers to your doorstep with this scan and
-                    go solution.
+            <div
+              class="flex flex-col md:grid md:grid-cols-2 gap-[28px] items-center lg:items-start"
+            >
+              <div class="flex flex-col gap-[40px] items-center lg:items-start">
+                <span
+                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                >
+                  widgets
+                </span>
+                <div class="flex flex-col gap-[16px] text-center lg:text-left">
+                  <h3 class="font-semibold text-[32px]">Custom URLs</h3>
+                  <p class="font-medium text-[16px]">
+                    With Scissor, you can create custom URLs, with the length
+                    you want! A solution for socials and businesses.
                   </p>
                 </div>
               </div>
 
-              <div>
-                <span class="material-symbols-outlined"> show_chart </span>
-                <div>
-                  <h3>Data Analytics</h3>
-                  <p>
-                    Receive data on the usage of either your shortened URL,
-                    custom URLs or generated QR codes. Embedded to monitor
-                    progress.
+              <div class="flex flex-col gap-[40px] items-center lg:items-start">
+                <span
+                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                >
+                  edit
+                </span>
+                <div class="flex flex-col gap-[16px] text-center lg:text-left">
+                  <h3 class="font-semibold text-[32px]">Custom URLs</h3>
+                  <p class="font-medium text-[16px]">
+                    With Scissor, you can create custom URLs, with the length
+                    you want! A solution for socials and businesses.
                   </p>
                 </div>
               </div>
@@ -284,6 +304,137 @@
           </div>
         </div>
       </div>
+
+      <section>
+        <div class="flex flex-col gap-[16px] items-center lg:w-[60.5%]">
+          <h2
+            class="font-bold text-[20px] md:text-[34px] pl-[16px] border-l-8"
+            style="
+              border-image: linear-gradient(to bottom, #112232 10%, #e4e9ed 80%)
+                1;
+            "
+          >
+            A <span class="text-blue">price perfect</span> for your needs.
+          </h2>
+
+          <p
+            class="font-medium text-[18px] text-center lg:text-left md:text-[15.6px] ml-[28.1px]"
+          >
+            From catering for your personal, business, event, socials needs, you
+            can be rest assured we have you in mind in our pricing.
+          </p>
+        </div>
+
+        <div>
+          <div>
+            <h4>Basic</h4>
+            <div>
+              <div>
+                <h3>Free</h3>
+                <p>Free plan for all users</p>
+              </div>
+              <ul>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Unlimited URL Shortening</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h4>Basic</h4>
+            <div>
+              <div>
+                <h3>Free</h3>
+                <p>Free plan for all users</p>
+              </div>
+              <ul>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Unlimited URL Shortening</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h4>Basic</h4>
+            <div>
+              <div>
+                <h3>Free</h3>
+                <p>Free plan for all users</p>
+              </div>
+              <ul>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Unlimited URL Shortening</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined"> task_alt </span>
+                  <p>Basic Link Analytics</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script>
