@@ -586,6 +586,10 @@ video {
   z-index: 10;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -1159,6 +1163,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1305,6 +1313,10 @@ video {
     display: flex;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:w-\[60\.5\%\] {
     width: 60.5%;
   }
@@ -1347,6 +1359,10 @@ video {
 
   .lg\:gap-\[68px\] {
     gap: 68px;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:gap-y-\[73px\] {
