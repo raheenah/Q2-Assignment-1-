@@ -57,10 +57,10 @@
       <nav
         class="z-20 py-4 m-3 items-center max-w-[1150px] flex flex-row justify-between md:hidden"
       >
-       <img
+        <img
           src="assets/wppusher-logo.png"
           alt="WP Pusher Logo"
-          class="w-[19%]"
+          class="w-[40%]"
         />
 
         <div class="md:hidden">
@@ -87,7 +87,9 @@
           class="absolute w-[100%] h-[100vh] items-center flex flex-col z-[100] bg-white top-0 right-0 md:flex md:space-x-4"
         >
           <button id="exit" class="text-gray-500 m-3 ml-auto p-3">X</button>
-          <ul class="flex flex-col gap-4 text-[14px] mt-48 items-center font-extrabold">
+          <ul
+            class="flex flex-col gap-4 text-[14px] mt-48 items-center font-extrabold"
+          >
             <li>
               <a href="../first.html">Ass 1</a>
             </li>
@@ -110,12 +112,11 @@
               <a href="">Account</a>
             </li>
           </ul>
-          
         </aside>
       </nav>
 
-      <section class="content flex w-[83.45%] my-[85px] mx-auto">
-        <section class="flex flex-col lg:flex-row">
+      <section class="content flex flex-col gap-6 w-[83.45%] my-[85px] mx-auto">
+        <section class="flex flex-col lg:flex-row shadow-xl">
           <section class="left w-full lg:w-[70%] p-12">
             <div class="title text-[30px]">
               <h1>Checkout</h1>
@@ -232,8 +233,8 @@
                   >
                     ?
                   </p>
-                  <p>
-                    <b>Need any help?</b> Don't hesitate to
+                  <p class="text-input_text">
+                    <b class="text-black">Need any help?</b> Don't hesitate to
                     <a href="">contact us for</a> support!
                   </p>
                 </div>
@@ -313,11 +314,11 @@
             </section>
           </div>
         </section>
-        <!-- <div class="copyright">
+        <div class="copyright w-fit mx-auto flex items-center gap-4 text-input_text">
           <p>&copy; 2018 WP Pusher IVS</p>
-          <div class="dot"></div>
-          <a href="">Terms of service</a>
-        </div> -->
+          <span class="dot">.</span>
+          <a href="" class="text-numberBorder">Terms of service</a>
+        </div>
       </section>
     </main>
     <script>
