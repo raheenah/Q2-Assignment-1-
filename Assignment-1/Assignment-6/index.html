@@ -479,63 +479,228 @@
         </div>
       </section>
 
-      <section class="flex mt-[112px]">
-        <div class="relative w-full ">
+      <section class="flex flex-col mt-[112px]">
+        <div class="relative w-full">
           <img
             src="src/faq.jpg"
             alt="Background Illustration"
-            class="w-full object-cover"
+            class="absolute inset-0 w-full h-full object-cover"
           />
-          <form
-            class="flex rounded-[12px] flex-col gap-[24px] p-[1.5%] h-[60%] z-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white"
-          >
-            <div class="max-w-[392px] flex flex-col gap-[24px]">
-              <div class="flex flex-col gap-[24px]">
-                <div
-                  class="w-full border-[1px] border-blue rounded-[12px] text-blue p-4"
-                >
-                  <input
-                    class="w-full placeholder-blue"
-                    type="text"
-                    placeholder="Search for answers"
-                  />
-                </div>
-
-                <div class="flex w-full gap-[12px]">
+          <div class="relative flex items-center justify-center my-[90px]">
+            <form
+              class="flex rounded-[12px] flex-col gap-[24px] px-[2%] py-[10%] box-border lg:max-h-[300px] z-50 bg-white items-center justify-center"
+            >
+              <div class="max-w-[392px] flex flex-col gap-[24px]">
+                <div class="flex flex-col gap-[24px]">
                   <div
                     class="w-full border-[1px] border-blue rounded-[12px] text-blue p-4"
                   >
-                    <select name="category" id="category" class="w-full">
-                      <option value="all">All</option>
-                      <option value="general">General</option>
-                      <option value="billing">Billing</option>
-                      <option value="account">Account</option>
-                      <option value="security">Security</option>
-                    </select>
+                    <input
+                      class="w-full placeholder-blue"
+                      type="text"
+                      placeholder="Search for answers"
+                    />
                   </div>
-                  <input
-                    type="text"
-                    placeholder="Search for answers"
-                    class="w-full placeholder-blue border-[1px] border-blue rounded-[12px] text-blue p-4"
-                  />
+
+                  <div class="flex w-full gap-[12px]">
+                    <div
+                      class="w-full border-[1px] border-blue rounded-[12px] text-blue p-4"
+                    >
+                      <select name="category" id="category" class="w-full">
+                        <option value="all">All</option>
+                        <option value="general">General</option>
+                        <option value="billing">Billing</option>
+                        <option value="account">Account</option>
+                        <option value="security">Security</option>
+                      </select>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Search for answers"
+                      class="w-full placeholder-blue border-[1px] border-blue rounded-[12px] text-blue p-4"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-[12px] text-blue text-[14px]">
+                  <button
+                    class="w-full bg-blue rounded-full text-white flex text-center gap-[10px] items-center justify-center p-4"
+                  >
+                    Trim URL
+                    <span class="material-symbols-outlined md">
+                      content_cut
+                    </span>
+                  </button>
+                  <p class="font-medium">
+                    By clicking TrimURL, I agree to the
+                    <a class="font-bold"> Terms of Service</a>,<a
+                      class="font-bold"
+                      >Privacy Policy</a
+                    >
+                    and Use of Cookies.
+                  </p>
                 </div>
               </div>
+            </form>
+          </div>
+        </div>
 
-              <div>
-                <button
-                  class="w-full  bg-blue rounded-[12px] text-white flex text-center  gap-10 items-center justify-center p-3"
-                >
-                  Trim URL
-                  <span class="material-symbols-outlined"> content_cut </span>
-                </button>
+        <div>
+          <h2
+            class="font-bold text-[20px] md:text-[34px] pl-[16px] border-l-8"
+            style="
+              border-image: linear-gradient(to bottom, #112232 10%, #e4e9ed 80%)
+                1;
+            "
+          >
+            FAQs
+          </h2>
+          <div class="list">
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
                 <p>
-                  By clicking TrimURL, I agree to the
-                  <a> Terms of Service</a>,<a>Privacy Policy</a>
-                  and Use of Cookies.
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
                 </p>
               </div>
-            </div>
-          </form>
+            </details>
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
+                <p>
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
+                <p>
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
+                <p>
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
+                <p>
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
+                <p>
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
+                <p>
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="number">01</span>
+                <div>
+                  <span class="heading">ARCHITECTURAL CONSULTANCY</span>
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </summary>
+              <div class="details-content">
+                <p>
+                  Architectural design at Outsitek is an artful fusion of
+                  innvovation, functionality, and cultural sensitivity. It's
+                  about creating spaces that not only stand the test of time but
+                  also leaves an indelible mark on the landscape of
+                  architectural execellence.
+                </p>
+              </div>
+            </details>
+          </div>
         </div>
       </section>
     </main>
