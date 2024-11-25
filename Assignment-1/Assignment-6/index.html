@@ -478,6 +478,66 @@
           >
         </div>
       </section>
+
+      <section class="flex mt-[112px]">
+        <div class="relative w-full ">
+          <img
+            src="src/faq.jpg"
+            alt="Background Illustration"
+            class="w-full object-cover"
+          />
+          <form
+            class="flex rounded-[12px] flex-col gap-[24px] p-[1.5%] h-[60%] z-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white"
+          >
+            <div class="max-w-[392px] flex flex-col gap-[24px]">
+              <div class="flex flex-col gap-[24px]">
+                <div
+                  class="w-full border-[1px] border-blue rounded-[12px] text-blue p-4"
+                >
+                  <input
+                    class="w-full placeholder-blue"
+                    type="text"
+                    placeholder="Search for answers"
+                  />
+                </div>
+
+                <div class="flex w-full gap-[12px]">
+                  <div
+                    class="w-full border-[1px] border-blue rounded-[12px] text-blue p-4"
+                  >
+                    <select name="category" id="category" class="w-full">
+                      <option value="all">All</option>
+                      <option value="general">General</option>
+                      <option value="billing">Billing</option>
+                      <option value="account">Account</option>
+                      <option value="security">Security</option>
+                    </select>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search for answers"
+                    class="w-full placeholder-blue border-[1px] border-blue rounded-[12px] text-blue p-4"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button
+                  class="w-full  bg-blue rounded-[12px] text-white flex text-center  gap-10 items-center justify-center p-3"
+                >
+                  Trim URL
+                  <span class="material-symbols-outlined"> content_cut </span>
+                </button>
+                <p>
+                  By clicking TrimURL, I agree to the
+                  <a> Terms of Service</a>,<a>Privacy Policy</a>
+                  and Use of Cookies.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <script>
