@@ -19,8 +19,9 @@
   </head>
   <body class="w-full">
     <main class="w-[94%] mx-auto">
+      <!-- desktop and tab -->
       <nav
-        class="flex w-full border-b-[5px] border-greyBorder justify-between items-center py-4"
+        class="hidden md:flex w-full border-b-[5px] border-greyBorder justify-between items-center py-4"
       >
         <img
           src="assets/wppusher-logo.png"
@@ -29,25 +30,93 @@
         />
         <ul class="flex gap-4 text-[14px] items-center font-extrabold">
           <li>
-            <a href="">Download</a>
+            <a href="../first.html">Ass 1</a>
           </li>
           <li>
-            <a href="">Learn More</a>
+            <a href="../Assignment-2/public/index.html">Ass 2</a>
           </li>
           <li>
-            <a href="">Pricing</a>
+            <a href="../Assignment-3/index.html">Ass 3</a>
           </li>
           <li>
-            <a href="">Help</a>
+            <a href="../Assignment-4/index.html">Ass 4</a>
+          </li>
+          <li>
+            <a href="index.html">Ass 5</a>
+          </li>
+          <li>
+            <a href="../Assignment-6/index.html">Ass 6</a>
           </li>
           <li class="py-2 px-4 rounded-[6px] border-[2px] border-input_text">
             <a href="">Account</a>
           </li>
         </ul>
       </nav>
-      <section class="content flex    w-[83.45%] my-[85px] mx-auto">
+
+      <!-- Nav for mobile  -->
+      <nav
+        class="z-20 py-4 m-3 items-center max-w-[1150px] flex flex-row justify-between md:hidden"
+      >
+       <img
+          src="assets/wppusher-logo.png"
+          alt="WP Pusher Logo"
+          class="w-[19%]"
+        />
+
+        <div class="md:hidden">
+          <button id="menu-button" class="text-blue focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <aside
+          id="menu"
+          class="absolute w-[100%] h-[100vh] items-center flex flex-col z-[100] bg-white top-0 right-0 md:flex md:space-x-4"
+        >
+          <button id="exit" class="text-gray-500 m-3 ml-auto p-3">X</button>
+          <ul class="flex flex-col gap-4 text-[14px] mt-48 items-center font-extrabold">
+            <li>
+              <a href="../first.html">Ass 1</a>
+            </li>
+            <li>
+              <a href="../Assignment-2/public/index.html">Ass 2</a>
+            </li>
+            <li>
+              <a href="../Assignment-3/index.html">Ass 3</a>
+            </li>
+            <li>
+              <a href="../Assignment-4/index.html">Ass 4</a>
+            </li>
+            <li>
+              <a href="index.html">Ass 5</a>
+            </li>
+            <li>
+              <a href="../Assignment-6/index.html">Ass 6</a>
+            </li>
+            <li class="py-2 px-4 rounded-[6px] border-[2px] border-input_text">
+              <a href="">Account</a>
+            </li>
+          </ul>
+          
+        </aside>
+      </nav>
+
+      <section class="content flex w-[83.45%] my-[85px] mx-auto">
         <section class="flex flex-col lg:flex-row">
-          <section class="left w-full lg:w-[70%] p-12  ">
+          <section class="left w-full lg:w-[70%] p-12">
             <div class="title text-[30px]">
               <h1>Checkout</h1>
             </div>
@@ -66,7 +135,7 @@
                 <div class="basic_content flex flex-col gap-4">
                   <div class="flex items-center gap-7">
                     <div
-                      class="basic_item text-[14px] gap-2 flex flex-col   w-full"
+                      class="basic_item text-[14px] gap-2 flex flex-col w-full"
                     >
                       <label for="fname">First Name</label>
                       <input
@@ -78,7 +147,7 @@
                       />
                     </div>
                     <div
-                      class="basic_item text-[14px] gap-2 flex flex-col   w-full"
+                      class="basic_item text-[14px] gap-2 flex flex-col w-full"
                     >
                       <label for="lname">Last Name</label>
                       <input
@@ -92,7 +161,7 @@
                   </div>
 
                   <div
-                    class="basic_item text-[14px] gap-2 flex flex-col   w-full"
+                    class="basic_item text-[14px] gap-2 flex flex-col w-full"
                   >
                     <label for="email">Email</label>
                     <input
@@ -117,9 +186,7 @@
                   </p>
                 </div>
                 <div class="card_content">
-                  <div
-                    class="card_form text-[14px] gap-2 flex flex-col   w-full"
-                  >
+                  <div class="card_form text-[14px] gap-2 flex flex-col w-full">
                     <label for="card_number">Credit Card Details</label>
                     <div
                       class="card_input w-full box-border bg-input_background text-input_text rounded-[4px] py-3"
@@ -182,8 +249,10 @@
           </section>
 
           <div class="w-full lg:w-[30%] bg-darker_blue">
-            <section class="sidebar w-full   mx-auto p-12">
-              <div class="sidebar_content  text-white w-[70%] mx-auto lg:w-full flex flex-col">
+            <section class="sidebar w-full mx-auto p-12">
+              <div
+                class="sidebar_content text-white w-[70%] mx-auto lg:w-full flex flex-col"
+              >
                 <div class="plan flex flex-col gap-6">
                   <h2 class="font-extrabold text-[20px]">Freelancer</h2>
                   <div class="pricing flex items-start font-extrabold">
@@ -205,27 +274,38 @@
                       <p>Use on <b>5</b> client sites</p>
                     </li>
                     <li class="flex gap-2">
-                      <i class="fa-regular fa-circle-check text-lighter_blue"></i>
+                      <i
+                        class="fa-regular fa-circle-check text-lighter_blue"
+                      ></i>
                       <p>Private repositories</p>
                     </li>
                     <li class="flex gap-2">
-                      <i class="fa-regular fa-circle-check text-lighter_blue"></i>
+                      <i
+                        class="fa-regular fa-circle-check text-lighter_blue"
+                      ></i>
                       <p>Email support</p>
                     </li>
                   </ul>
                   <div class="benefits_bottom flex flex-col gap-3">
                     <p>Need <b>20</b> client sites?</p>
-                    <a href="" class="border-b-[2px] w-fit border-lighter_blue">Switch to the Agency plan.</a>
+                    <a href="" class="border-b-[2px] w-fit border-lighter_blue"
+                      >Switch to the Agency plan.</a
+                    >
                   </div>
                 </div>
-                <div class="review mt-16 border-t-[2px] flex flex-col gap-4 border-greyBorder w-full py-12">
-
+                <div
+                  class="review mt-16 border-t-[2px] flex flex-col gap-4 border-greyBorder w-full py-12"
+                >
                   <p class="italic">
                     FTP is horrible to deal with.<b> WP Pusher</b> solves that
                     issue, and the customer support is awesome!
                   </p>
                   <div class="reviewer_details flex gap-4 items-center">
-                    <img src="assets/Title.jpg" alt="Reviewer Photo" class="w-14 h-14 rounded-full" />
+                    <img
+                      src="assets/Title.jpg"
+                      alt="Reviewer Photo"
+                      class="w-14 h-14 rounded-full"
+                    />
                     <p class="reviewer_name font-bold">Kirk Beard</p>
                   </div>
                 </div>
@@ -240,5 +320,23 @@
         </div> -->
       </section>
     </main>
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const menu = document.getElementById("menu");
+      const exitButton = document.getElementById("exit");
+      const add = document.getElementById("add");
+      const icon = document.getElementById("icon");
+      const details = document.getElementById("details");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      exitButton.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("menu").classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
