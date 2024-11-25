@@ -7,3 +7,15 @@
   src: url('../gilroy/Gilroy-Regular.ttf') format('ttf');
   
 }
+
+
+/* #add {
+  
+}
+#minus {
+  display: none !important;
+} */
+
+details summary {
+  list-style: none; 
+}
