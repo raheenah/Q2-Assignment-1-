@@ -15,17 +15,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
   </head>
-  <body class="w-[1440px] h-[1170px] bg-blue-100">
-    <main class="w-[1360px] mx-auto bg-red-500">
-      <nav class="flex justify-between items-center">
+  <body class="w-full">
+    <main class="w-[94%] mx-auto">
+      <nav
+        class="flex w-full border-b-[5px] border-greyBorder justify-between items-center py-4"
+      >
         <img
           src="assets/wppusher-logo.png"
           alt="WP Pusher Logo"
-          class="w-[200px] h-[39px]"
+          class="w-[19%]"
         />
-        <ul>
+        <ul class="flex gap-4 text-[14px] items-center font-extrabold">
           <li>
             <a href="">Download</a>
           </li>
@@ -38,151 +40,205 @@
           <li>
             <a href="">Help</a>
           </li>
-          <li>
+          <li class="py-2 px-4 rounded-[6px] border-[2px] border-input_text">
             <a href="">Account</a>
           </li>
         </ul>
       </nav>
-      <section class="content_grid">
-        <section class="left">
-          <div class="title">
-            <h1>Checkout</h1>
-          </div>
-          <form class="main_content">
-            <section class="basic">
-              <div class="basic_title">
-                <h2>1</h2>
-                <p>Your Basic Information</p>
-              </div>
-              <div class="basic_content">
-                <div class="basic_item">
-                  <label for="fname">First Name</label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    placeholder="Jane"
-                  />
+      <section class="content flex    w-[83.45%] my-[85px] mx-auto">
+        <section class="flex flex-col lg:flex-row">
+          <section class="left w-full lg:w-[70%] p-12  ">
+            <div class="title text-[30px]">
+              <h1>Checkout</h1>
+            </div>
+            <form class="main_content mt-14 flex flex-col">
+              <section class="basic flex flex-col gap-4">
+                <div class="basic_title flex items-center gap-3">
+                  <h2
+                    class="px-3 py-1 border-[2px] border-numberBorder rounded-full"
+                  >
+                    1
+                  </h2>
+                  <p class="text-[18px] font-extrabold">
+                    Your Basic Information
+                  </p>
                 </div>
-                <div class="basic_item">
-                  <label for="lname">Last Name</label>
-                  <input
-                    type="text"
-                    id="lname"
-                    name="lname"
-                    placeholder="Doe"
-                  />
-                </div>
-                <div class="basic_item" id="email">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="janedoe@example.com"
-                  />
-                </div>
-              </div>
-            </section>
-            <section class="card">
-              <div class="card_title">
-                <div class="number">
-                  <h2>2</h2>
-                </div>
-                <p>Your Payment Information</p>
-              </div>
-              <div class="card_content">
-                <div class="card_form">
-                  <label for="card_number">Credit Card Details</label>
-                  <div class="card_input">
+                <div class="basic_content flex flex-col gap-4">
+                  <div class="flex items-center gap-7">
+                    <div
+                      class="basic_item text-[14px] gap-2 flex flex-col   w-full"
+                    >
+                      <label for="fname">First Name</label>
+                      <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        placeholder="Jane"
+                        class="w-full bg-input_background text-input_text rounded-[4px] p-3"
+                      />
+                    </div>
+                    <div
+                      class="basic_item text-[14px] gap-2 flex flex-col   w-full"
+                    >
+                      <label for="lname">Last Name</label>
+                      <input
+                        type="text"
+                        id="lname"
+                        name="lname"
+                        placeholder="Doe"
+                        class="w-full bg-input_background text-input_text rounded-[4px] p-3"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="basic_item text-[14px] gap-2 flex flex-col   w-full"
+                  >
+                    <label for="email">Email</label>
                     <input
                       type="text"
-                      id="card_number"
-                      placeholder="Card Number"
-                      maxlength="19"
+                      id="email"
+                      name="email"
+                      placeholder="janedoe@example.com"
+                      class="w-full bg-input_background text-input_text rounded-[4px] p-3"
                     />
-                    <input
-                      type="text"
-                      id="expiry_date"
-                      placeholder="MM/YY"
-                      maxlength="5"
-                    />
-                    <input
-                      type="number"
-                      id="cvc"
-                      placeholder="CVC"
-                      maxlength="3"
-                    />
+                  </div>
+                </div>
+              </section>
+              <section class="card mt-6 flex flex-col gap-4">
+                <div class="basic_title flex items-center gap-3">
+                  <h2
+                    class="px-3 py-1 border-[2px] border-numberBorder rounded-full"
+                  >
+                    2
+                  </h2>
+                  <p class="text-[18px] font-extrabold">
+                    Your Payment Information
+                  </p>
+                </div>
+                <div class="card_content">
+                  <div
+                    class="card_form text-[14px] gap-2 flex flex-col   w-full"
+                  >
+                    <label for="card_number">Credit Card Details</label>
+                    <div
+                      class="card_input w-full box-border bg-input_background text-input_text rounded-[4px] py-3"
+                    >
+                      <input
+                        type="text"
+                        id="card_number"
+                        placeholder="Card Number"
+                        maxlength="19"
+                        class="lg:w-[50%] bg-transparent px-3"
+                      />
+                      <input
+                        type="text"
+                        id="expiry_date"
+                        placeholder="MM/YY"
+                        maxlength="5"
+                        class="lg:w-fit bg-transparent px-3"
+                      />
+                      <input
+                        type="number"
+                        id="cvc"
+                        placeholder="CVC"
+                        maxlength="3"
+                        class="lg:w-fit bg-transparent px-3"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="payment flex flex-col w-full mt-28 gap-4">
+                <button
+                  type="submit"
+                  class="w-full bg-button_background rounded-[5px] text-white py-5 font-extrabold text-clip"
+                >
+                  Buy WP Pusher
+                </button>
+                <div
+                  class="contact_us flex items-center w-[70%] mx-auto gap-[10px]"
+                >
+                  <p
+                    id="question"
+                    class="px-2 rounded-full border-[2px] border-numberBorder text-numberBorder"
+                  >
+                    ?
+                  </p>
+                  <p>
+                    <b>Need any help?</b> Don't hesitate to
+                    <a href="">contact us for</a> support!
+                  </p>
+                </div>
+                <p
+                  class="power w-fit mx-auto bg-stripeBG text-white flex items-center gap-3 px-3 rounded-xl"
+                >
+                  Powered by<i
+                    class="fa-brands fa-stripe font-extrabold text-[50px]"
+                  ></i>
+                </p>
+              </div>
+            </form>
+          </section>
+
+          <div class="w-full lg:w-[30%] bg-darker_blue">
+            <section class="sidebar w-full   mx-auto p-12">
+              <div class="sidebar_content  text-white w-[70%] mx-auto lg:w-full flex flex-col">
+                <div class="plan flex flex-col gap-6">
+                  <h2 class="font-extrabold text-[20px]">Freelancer</h2>
+                  <div class="pricing flex items-start font-extrabold">
+                    <p class="text-[24px]">$</p>
+                    <p class="text-[60px] font-light">
+                      99<span class="text-[18px]">/ year</span>
+                    </p>
+                  </div>
+                  <p id="text " class="italic text-[22px]">
+                    Automatically renews after 1 year
+                  </p>
+                </div>
+                <div class="benefits mt-8 flex flex-col gap-14">
+                  <ul class="flex flex-col gap-3">
+                    <li class="flex gap-2">
+                      <i
+                        class="fa-regular fa-circle-check text-lighter_blue"
+                      ></i>
+                      <p>Use on <b>5</b> client sites</p>
+                    </li>
+                    <li class="flex gap-2">
+                      <i class="fa-regular fa-circle-check text-lighter_blue"></i>
+                      <p>Private repositories</p>
+                    </li>
+                    <li class="flex gap-2">
+                      <i class="fa-regular fa-circle-check text-lighter_blue"></i>
+                      <p>Email support</p>
+                    </li>
+                  </ul>
+                  <div class="benefits_bottom flex flex-col gap-3">
+                    <p>Need <b>20</b> client sites?</p>
+                    <a href="" class="border-b-[2px] w-fit border-lighter_blue">Switch to the Agency plan.</a>
+                  </div>
+                </div>
+                <div class="review mt-16 border-t-[2px] flex flex-col gap-4 border-greyBorder w-full py-12">
+
+                  <p class="italic">
+                    FTP is horrible to deal with.<b> WP Pusher</b> solves that
+                    issue, and the customer support is awesome!
+                  </p>
+                  <div class="reviewer_details flex gap-4 items-center">
+                    <img src="assets/Title.jpg" alt="Reviewer Photo" class="w-14 h-14 rounded-full" />
+                    <p class="reviewer_name font-bold">Kirk Beard</p>
                   </div>
                 </div>
               </div>
             </section>
-            <div class="payment">
-              <button type="submit">Buy WP Pusher</button>
-              <div class="contact_us">
-                <p id="question">?</p>
-                <p>
-                  <b>Need any help?</b> Don't hesitate to
-                  <a href="">contact us for</a> support!
-                </p>
-              </div>
-              <p class="power">Powered by<i class="fa-brands fa-stripe"></i></p>
-            </div>
-          </form>
-        </section>
-        <section class="sidebar">
-          <div class="sidebar_content">
-            <div class="plan">
-              <h2>Freelancer</h2>
-              <div class="price">
-                <div class="pricing">
-                  <p>$</p>
-                  <p>99<span>/ year</span></p>
-                </div>
-              </div>
-              <p id="text">Automatically renews after 1 year</p>
-            </div>
-            <div class="benefits">
-              <ul>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Use on <b>5</b> client sites</p>
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Private repositories</p>
-                </li>
-                <li>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Email support</p>
-                </li>
-              </ul>
-              <div class="benefits_bottom">
-                <p>Need <b>20</b> client sites?</p>
-                <a href="">Switch to the Agency plan.</a>
-              </div>
-            </div>
-            <div class="review">
-              <div class="sidebar_line"></div>
-
-              <p>
-                FTP is horrible to deal with.<b> WP Pusher</b> solves that
-                issue, and the customer support is awesome!
-              </p>
-              <div class="reviewer_details">
-                <img src="assets/Title.jpg" alt="Reviewer Photo" />
-                <p class="reviewer_name">Kirk Beard</p>
-              </div>
-            </div>
           </div>
         </section>
+        <!-- <div class="copyright">
+          <p>&copy; 2018 WP Pusher IVS</p>
+          <div class="dot"></div>
+          <a href="">Terms of service</a>
+        </div> -->
       </section>
-
-      <div class="copyright">
-        <p>&copy; 2018 WP Pusher IVS</p>
-        <div class="dot"></div>
-        <a href="">Terms of service</a>
-      </div>
     </main>
   </body>
 </html>
