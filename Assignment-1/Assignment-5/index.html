@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raheenat Mohammed</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="w-[1440px] h-[1170px] bg-blue-100">
+    <main class="w-[1360px] mx-auto bg-red-500">
+      <nav class="flex justify-between items-center">
+        <img
+          src="assets/wppusher-logo.png"
+          alt="WP Pusher Logo"
+          class="w-[200px] h-[39px]"
+        />
+        <ul>
+          <li>
+            <a href="">Download</a>
+          </li>
+          <li>
+            <a href="">Learn More</a>
+          </li>
+          <li>
+            <a href="">Pricing</a>
+          </li>
+          <li>
+            <a href="">Help</a>
+          </li>
+          <li>
+            <a href="">Account</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="content_grid">
+        <section class="left">
+          <div class="title">
+            <h1>Checkout</h1>
+          </div>
+          <form class="main_content">
+            <section class="basic">
+              <div class="basic_title">
+                <h2>1</h2>
+                <p>Your Basic Information</p>
+              </div>
+              <div class="basic_content">
+                <div class="basic_item">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="basic_item">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Doe"
+                  />
+                </div>
+                <div class="basic_item" id="email">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="janedoe@example.com"
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="card">
+              <div class="card_title">
+                <div class="number">
+                  <h2>2</h2>
+                </div>
+                <p>Your Payment Information</p>
+              </div>
+              <div class="card_content">
+                <div class="card_form">
+                  <label for="card_number">Credit Card Details</label>
+                  <div class="card_input">
+                    <input
+                      type="text"
+                      id="card_number"
+                      placeholder="Card Number"
+                      maxlength="19"
+                    />
+                    <input
+                      type="text"
+                      id="expiry_date"
+                      placeholder="MM/YY"
+                      maxlength="5"
+                    />
+                    <input
+                      type="number"
+                      id="cvc"
+                      placeholder="CVC"
+                      maxlength="3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="payment">
+              <button type="submit">Buy WP Pusher</button>
+              <div class="contact_us">
+                <p id="question">?</p>
+                <p>
+                  <b>Need any help?</b> Don't hesitate to
+                  <a href="">contact us for</a> support!
+                </p>
+              </div>
+              <p class="power">Powered by<i class="fa-brands fa-stripe"></i></p>
+            </div>
+          </form>
+        </section>
+        <section class="sidebar">
+          <div class="sidebar_content">
+            <div class="plan">
+              <h2>Freelancer</h2>
+              <div class="price">
+                <div class="pricing">
+                  <p>$</p>
+                  <p>99<span>/ year</span></p>
+                </div>
+              </div>
+              <p id="text">Automatically renews after 1 year</p>
+            </div>
+            <div class="benefits">
+              <ul>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  <p>Use on <b>5</b> client sites</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  <p>Private repositories</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i>
+                  <p>Email support</p>
+                </li>
+              </ul>
+              <div class="benefits_bottom">
+                <p>Need <b>20</b> client sites?</p>
+                <a href="">Switch to the Agency plan.</a>
+              </div>
+            </div>
+            <div class="review">
+              <div class="sidebar_line"></div>
+
+              <p>
+                FTP is horrible to deal with.<b> WP Pusher</b> solves that
+                issue, and the customer support is awesome!
+              </p>
+              <div class="reviewer_details">
+                <img src="assets/Title.jpg" alt="Reviewer Photo" />
+                <p class="reviewer_name">Kirk Beard</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <div class="copyright">
+        <p>&copy; 2018 WP Pusher IVS</p>
+        <div class="dot"></div>
+        <a href="">Terms of service</a>
+      </div>
+    </main>
+  </body>
+</html>

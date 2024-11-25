@@ -11,6 +11,7 @@ module.exports = {
         white_gradient: "#4D6B88",
         light_blue_icon: "#E4EFFF",
         highlighted_card: "#1E3448",
+        orange_bg: "#EAC81F",
       },
       fontFamily: {
         Gilroy: ["Gilroy", "sans-serif"],
