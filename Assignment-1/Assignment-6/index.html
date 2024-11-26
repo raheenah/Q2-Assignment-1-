@@ -25,34 +25,34 @@
         <img src="src/Logo (1).png" alt="Logo" />
       </div>
       <ul
-        class="flex text-[18px] font-Gilroy font-medium gap-3 lg:gap-[40px] text-black items-center"
+        class="flex text-[10px] lg:text-[12px] font-Gilroy font-bold gap-3 lg:gap-[40px] text-black items-center"
       >
-       <li>
-            <a href="../index.html">Assignment Collection</a>
-          </li>
         <li>
-          <a href="../first.html">Ass 1</a>
+          <a href="../index.html">Collection</a>
         </li>
         <li>
-          <a href="../Assignment-2/public/index.html">Ass 2</a>
+          <a href="../first.html">ONE</a>
         </li>
         <li>
-          <a href="../Assignment-3/index.html">Ass 3</a>
+          <a href="../Assignment-2/public/index.html">TWO</a>
         </li>
         <li>
-          <a href="../Assignment-4/index.html">Ass 4</a>
+          <a href="../Assignment-3/index.html">THREE</a>
         </li>
         <li>
-          <a href="../Assignment-5/index.html">Ass 5</a>
+          <a href="../Assignment-4/index.html">FOUR</a>
         </li>
         <li>
-          <a href="index.html">Ass 6</a>
+          <a href="../Assignment-5/index.html">FIVE</a>
+        </li>
+        <li>
+          <a href="index.html">SIX</a>
         </li>
       </ul>
       <div class="flex items-center gap-[24px] font-semibold">
-        <a href="" class="text-[16px]">Log in</a>
+        <a href="" class="text-[14px] lg:text-[16px]">Log in</a>
         <button
-          class="bg-blue text-white w-[142px] text-[16px] h-[44px] rounded-[100px]"
+          class="bg-blue text-white w-[142px] text-[14px] lg:text-[16px] h-[44px] rounded-[100px]"
         >
           Try for free
         </button>
@@ -111,7 +111,7 @@
             <a href="../Assignment-5/index.html">Assignment 5</a>
           </li>
           <li>
-            <a href="index.html">Ass 6</a>
+            <a href="index.html">Assignment 6</a>
           </li>
         </ul>
         <div class="flex gap-10 mt-20 items-center">
@@ -282,7 +282,7 @@
                 class="flex flex-col gap-[40px] items-center lg:items-start text-center lg:text-start"
               >
                 <span
-                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined text-blue   bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   link
                 </span>
@@ -297,7 +297,7 @@
 
               <div class="flex flex-col gap-[40px] items-center lg:items-start">
                 <span
-                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined text-blue   bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   edit
                 </span>
@@ -316,30 +316,32 @@
             >
               <div class="flex flex-col gap-[40px] items-center lg:items-start">
                 <span
-                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined text-blue   bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   widgets
                 </span>
                 <div class="flex flex-col gap-[16px] text-center lg:text-left">
-                  <h3 class="font-semibold text-[32px]">Custom URLs</h3>
+                  <h3 class="font-semibold text-[32px]">QR Codes</h3>
                   <p class="font-medium text-[16px]">
-                    With Scissor, you can create custom URLs, with the length
-                    you want! A solution for socials and businesses.
+                    Generate QR codes to your business, events. Bring your
+                    audience and customers to your doorstep with this scan and
+                    go solution.
                   </p>
                 </div>
               </div>
 
               <div class="flex flex-col gap-[40px] items-center lg:items-start">
                 <span
-                  class="material-symbols-outlined bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined bg-light_blue_icon text-blue  inline-block p-7 text-[20px] text-center rounded-full"
                 >
-                  edit
+                  query_stats
                 </span>
                 <div class="flex flex-col gap-[16px] text-center lg:text-left">
-                  <h3 class="font-semibold text-[32px]">Custom URLs</h3>
+                  <h3 class="font-semibold text-[32px]">Data Analytics</h3>
                   <p class="font-medium text-[16px]">
-                    With Scissor, you can create custom URLs, with the length
-                    you want! A solution for socials and businesses.
+                    Receive data on the usage of either your shortened URL,
+                    custom URLs or generated QR codes. Embedded to monitor
+                    progress.
                   </p>
                 </div>
               </div>
@@ -535,7 +537,7 @@
                     <input
                       class="w-full placeholder-blue"
                       type="text"
-                      placeholder="Search for answers"
+                      placeholder="Paste URL here..."
                     />
                   </div>
 
@@ -543,8 +545,14 @@
                     <div
                       class="w-full border-[1px] border-blue rounded-[12px] text-blue p-4"
                     >
-                      <select name="category" id="category" class="w-full">
-                        <option value="all">All</option>
+                      <select
+                        name="category"
+                        id="category"
+                        class="w-full b-0 bg-transparent"
+                      >
+                        <option value="select" selected disabled>
+                          Choose Domain
+                        </option>
                         <option value="general">General</option>
                         <option value="billing">Billing</option>
                         <option value="account">Account</option>
@@ -553,7 +561,7 @@
                     </div>
                     <input
                       type="text"
-                      placeholder="Search for answers"
+                      placeholder="Type Alias here"
                       class="w-full placeholder-blue border-[1px] border-blue rounded-[12px] text-blue p-4"
                     />
                   </div>
@@ -617,7 +625,7 @@
                     How does URL shortening work?
                     <span
                       id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -647,7 +655,7 @@
                     shortening service? URL shortening work?
                     <span
                       id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -676,7 +684,7 @@
                     Are the shortened links permanent? Will they expire?
                     <span
                       id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -705,8 +713,7 @@
                     Are there any limitations on the number of URLs I can
                     shorten?
                     <span
-                      id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -735,8 +742,7 @@
                     Can I customize the shortened URLs to reflect my brand or
                     content?
                     <span
-                      id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -764,8 +770,7 @@
                   >
                     Can I track the performance of my shortened URLs?
                     <span
-                      id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -794,8 +799,7 @@
                     How secure is the URL shortening service? Are the shortened
                     links protected against spam or malicious activity?
                     <span
-                      id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -823,8 +827,7 @@
                   >
                     What is a QR code and what can it do?
                     <span
-                      id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -843,7 +846,6 @@
                 </div>
               </details>
               <details
-                id="details"
                 class="group border-b-[1px] py-[16px] border-b-grey_highlight"
               >
                 <summary class="flex items-center justify-between">
@@ -853,8 +855,7 @@
                     Is there an API available for integrating the URL shortening
                     service into my own applications or websites?
                     <span
-                      id="icon"
-                      class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
+                      class="icon material-symbols-outlined transition-transform duration-300 group-open:rotate-180 cursor-pointer"
                     >
                       add
                     </span>
@@ -1043,8 +1044,8 @@
       const menu = document.getElementById("menu");
       const exitButton = document.getElementById("exit");
       const add = document.getElementById("add");
-      const icon = document.getElementById("icon");
-      const details = document.getElementById("details");
+      const icon = document.querySelector(".icon");
+      const details = document.querySelector(".group");
 
       menuButton.addEventListener("click", () => {
         menu.classList.toggle("hidden");
@@ -1063,13 +1064,6 @@
       //   add.classList.toggle("hidden");
       //   minus.classList.toggle("hidden");
       // });
-      details.addEventListener("toggle", () => {
-        if (details.open) {
-          icon.textContent = "remove"; // Change to minus icon
-        } else {
-          icon.textContent = "add"; // Change back to plus icon
-        }
-      });
     </script>
   </body>
 </html>
