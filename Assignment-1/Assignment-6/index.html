@@ -282,7 +282,7 @@
                 class="flex flex-col gap-[40px] items-center lg:items-start text-center lg:text-start"
               >
                 <span
-                  class="material-symbols-outlined text-blue   bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined text-blue bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   link
                 </span>
@@ -297,7 +297,7 @@
 
               <div class="flex flex-col gap-[40px] items-center lg:items-start">
                 <span
-                  class="material-symbols-outlined text-blue   bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined text-blue bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   edit
                 </span>
@@ -316,7 +316,7 @@
             >
               <div class="flex flex-col gap-[40px] items-center lg:items-start">
                 <span
-                  class="material-symbols-outlined text-blue   bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined text-blue bg-light_blue_icon inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   widgets
                 </span>
@@ -332,7 +332,7 @@
 
               <div class="flex flex-col gap-[40px] items-center lg:items-start">
                 <span
-                  class="material-symbols-outlined bg-light_blue_icon text-blue  inline-block p-7 text-[20px] text-center rounded-full"
+                  class="material-symbols-outlined bg-light_blue_icon text-blue inline-block p-7 text-[20px] text-center rounded-full"
                 >
                   query_stats
                 </span>
@@ -542,23 +542,19 @@
                   </div>
 
                   <div class="flex w-full gap-[12px]">
-                    <div
-                      class="w-full border-[1px] border-blue rounded-[12px] text-blue p-4"
+                    <select
+                      name="category"
+                      id="category"
+                      class="w-full b-0 bg-transparent border-[1px] border-blue rounded-[12px] text-blue p-4"
                     >
-                      <select
-                        name="category"
-                        id="category"
-                        class="w-full b-0 bg-transparent"
-                      >
-                        <option value="select" selected disabled>
-                          Choose Domain
-                        </option>
-                        <option value="general">General</option>
-                        <option value="billing">Billing</option>
-                        <option value="account">Account</option>
-                        <option value="security">Security</option>
-                      </select>
-                    </div>
+                      <option value="select" selected disabled>
+                        Choose Domain
+                      </option>
+                      <option value="general">General</option>
+                      <option value="billing">Billing</option>
+                      <option value="account">Account</option>
+                      <option value="security">Security</option>
+                    </select>
                     <input
                       type="text"
                       placeholder="Type Alias here"
